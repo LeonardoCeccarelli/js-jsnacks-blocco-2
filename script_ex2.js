@@ -1,8 +1,8 @@
-const array1 = [15, 2, 7];
-const array2 = [5];
+// const array1 = [15, 2, 7];
+// const array2 = [5];
 
-// const array1 = ['ciao'];
-// const array2 = ['hola', 'hello'];
+const array1 = ['ciao'];
+const array2 = ['hola', 'hello'];
 
 let bigArray = ""
 let shortArray = ""
@@ -17,8 +17,9 @@ if (array1.length === array2.length) {
     shortArray = array1
 }
 
-console.log(`l'array più corto ha ${shortArray.length} elemnti`);
-console.log(`l'array più lungo ha ${bigArray.length} elemnti`);
+console.log(`l'array più corto ha ${shortArray.length} elementi`);
+console.log(`l'array più lungo ha ${bigArray.length} elementi`);
+console.log("--------------------------------------");
 
 
 // Chiedo all'utente di inserire un numero all'array con meno
@@ -27,10 +28,16 @@ console.log(`l'array più lungo ha ${bigArray.length} elemnti`);
 
 while (shortArray.length < bigArray.length) {
 
+    console.log(`l'array corto prima di aggiungere un ulteriore valore ha ${shortArray.length} elementi`);
+
     const elementoUtente = prompt("Inserisci un elemento")
 
     shortArray.push(elementoUtente)
+
+    console.log(`l'array corto con l'elemento inserito dall'utente ha ora ${shortArray.length} elementi`);
 }
+
+console.log("--------------------------------------");
 
 console.log("lunghezza finale = " + array1.length);
 console.log("lunghezza finale = " + array2.length);
